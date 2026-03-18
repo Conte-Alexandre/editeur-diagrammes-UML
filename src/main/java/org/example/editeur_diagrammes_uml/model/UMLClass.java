@@ -1,24 +1,23 @@
 package org.example.editeur_diagrammes_uml.model;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class UMLClass {
     private int id;
     private String className;
-    private List<Attribute> attributes;
-    private List<Method> methods ;
+    private List<Attribute> attributes = new ArrayList<>();
+    private List<Method> methods = new ArrayList<>() ;
     private double x;
     private double y;
     private int width;
     private int height;
-    public UMLClass(int id, String className, List attribute, List method, double x, double y) {
-        this.id = id;
+
+    public UMLClass(String className, double y, double x) {
         this.className = className;
-        this.attributes = attribute;
-        this.methods = method;
-        this.x = x;
         this.y = y;
+        this.x = x;
     }
 
     public void addAttribute(Attribute attribute){

@@ -6,13 +6,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml">
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.editeur_diagrammes_uml.controller.UMLController">
     <left>
-        <VBox>
-            <Button>Ajouter Une Classe</Button>
+        <VBox style="-fx-border-color: black">
+            <Label style="-fx-padding:2">Menu</Label>
+            <Button onAction="#onAddClass">Ajouter Une Classe</Button>
         </VBox>
     </left>
     <center>
-        <Pane fx:id="workspace"></Pane>
+        <Pane fx:id="workspace" onMouseClicked="#onWorkspaceClick"></Pane>
     </center>
 </BorderPane>

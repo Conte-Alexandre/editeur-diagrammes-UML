@@ -14,7 +14,7 @@ public class UMLClass {
     private int width;
     private int height;
 
-    public UMLClass(String className, double y, double x) {
+    public UMLClass(String className, double x, double y) {
         this.className = className;
         this.y = y;
         this.x = x;
@@ -52,4 +52,23 @@ public class UMLClass {
         return methods;
     }
 
+    public String getClassName() {
+        return className;
+    }
+
+    public double getX() {
+        return x;
+    }
+
+    public double getY() {
+        return y;
+    }
+
+    public void setX(double x) {
+        this.x = x;
+    }
+
+    public void setY(double y) {
+        this.y = y;
+    }
 }

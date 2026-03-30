@@ -10,7 +10,12 @@
     <left>
         <VBox style="-fx-border-color: black">
             <Label style="-fx-padding:2">Menu</Label>
-            <Button onAction="#onAddClass">Ajouter Une Classe</Button>
+            <Button onAction="#onAddClass" >Ajouter Une Classe</Button>
+            <Label style="-fx-padding:2">Menu relations</Label>
+            <Button onAction="#onAddClass" >crée une association</Button>
+            <Button onAction="#onAddClass">crée un Héritage</Button>
+            <Button onAction="#onAddClass">crée une Dépendance</Button>
+
         </VBox>
     </left>
     <center>

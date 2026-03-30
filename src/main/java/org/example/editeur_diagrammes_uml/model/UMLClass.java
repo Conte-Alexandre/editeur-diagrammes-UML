@@ -5,14 +5,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UMLClass {
-    private int id;
     private String className;
     private List<Attribute> attributes = new ArrayList<>();
     private List<Method> methods = new ArrayList<>() ;
     private double x;
     private double y;
-    private int width;
-    private int height;
 
     public UMLClass(String className, double x, double y) {
         this.className = className;

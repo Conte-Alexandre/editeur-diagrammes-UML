@@ -6,12 +6,13 @@ public class Attribute {
     private Visibility visibility;
     private String multiplicity;
 
-    public Attribute(String name, String type, Visibility visibility, String multiplicity) {
+    public Attribute(String name, String type, Visibility visibility) {
         this.name = name;
         this.type = type;
         this.visibility = visibility;
-        this.multiplicity = multiplicity;
     }
+
+
 
     public void setName(String name) {
         this.name = name;
@@ -21,11 +22,20 @@ public class Attribute {
         this.type = type;
     }
 
-    public void setVisibility(Visibility visibility) {
-        this.visibility = visibility;
-    }
 
     public void setMultiplicity(String multiplicity) {
         this.multiplicity = multiplicity;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public Visibility getVisibility() {
+        return visibility;
     }
 }

@@ -23,4 +23,26 @@ public class Method {
     public void setName(String name) {
         this.name = name;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public Visibility getVisibility() {
+        return visibility;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public Boolean getAbstract() {
+        return isAbstract;
+    }
+
+    public Boolean getStatic() {
+        return isStatic;
+    }
+
+
 }

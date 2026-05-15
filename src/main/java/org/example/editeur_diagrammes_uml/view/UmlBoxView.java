@@ -27,6 +27,10 @@ public class UmlBoxView extends VBox {
         this.controller = controller;
 
         initDrag();
+        this.setOnMouseClicked(event ->{
+            event.consume();
+            controller.handleClassClick(model);
+        });
         refresh();
         setUpContextMenu();
     }
@@ -43,6 +47,7 @@ public class UmlBoxView extends VBox {
             this.setLayoutY(newY);
             model.setX(newX);
             model.setY(newY);
+            controller.refreshAssociations();
             System.out.println("{debug " + model.getClassName() +"} x=" + newX + " y=" + newY);
         });
     }
